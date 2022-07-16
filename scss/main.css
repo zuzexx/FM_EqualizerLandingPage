@@ -1,0 +1,153 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(".assets/mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "IBM Plex Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#logo-header {
+  margin-left: 90px;
+}
+
+#first-container {
+  width: 320px;
+  height: 327px;
+  margin: auto;
+  margin-top: 50px;
+  color: #191826;
+}
+#first-container h1 {
+  word-spacing: -1px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#first-container p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#container-images {
+  background: url(".assets/bg-pattern-2.svg"), #191826;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 550px;
+  margin-top: 200px;
+}
+
+#back-img {
+  width: 400px;
+  height: 550px;
+  margin-left: 50px;
+  z-index: 1;
+  position: absolute;
+}
+
+#phone-img {
+  width: 300px;
+  margin-left: 20%;
+  padding-bottom: 20px;
+  margin-top: -140px;
+  z-index: 100;
+  position: absolute;
+}
+
+#second-container {
+  background-color: #fa7453;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: -30px;
+  z-index: 4;
+  position: absolute;
+  width: 97vw;
+}
+#second-container h2 {
+  color: #fcfaf9;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+#second-container p {
+  color: #fcfaf9;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 15%;
+  width: 350px;
+}
+#second-container #money {
+  color: #fcfaf9;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+#second-container #money span {
+  font-weight: 700;
+  font-size: 70px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+#buttons #apple-btn {
+  background-color: #191826;
+  color: #fcfaf9;
+  width: 80vw;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 8px;
+}
+#buttons #android-btn {
+  background-color: #fcfaf9;
+  color: #191826;
+  width: 80vw;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 8px;
+}
+
+footer {
+  background-color: #fcfaf9;
+  width: 97vw;
+  margin-top: 440px;
+  z-index: 7;
+  position: absolute;
+}
+footer p {
+  margin-top: 40px;
+  width: 290px;
+  margin-left: 20px;
+}
+footer #mail {
+  margin-top: 5px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+footer #social-media {
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+footer img {
+  padding-left: 15px;
+}/*# sourceMappingURL=main.css.map */
