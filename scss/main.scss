@@ -1,7 +1,7 @@
 @import "./global", "./variables";
 
 @mixin btnStyle(){
-    width: 80vw;
+    width: 80%;
     padding-top: 14px;
     padding-bottom: 14px;
     border-radius: 10px;
@@ -35,9 +35,15 @@ body{
     font-family: $font-family;
     height:100%;
     width: 100%;
+    @include smol(){
+        background-color: red;
+    }
+    @include desktop(){
+        background-color: green;
+    }
 }
 #logo-header{
-    margin-left: 90px;
+    margin-left: 10px ;
 }
 
 #first-container{
@@ -46,16 +52,28 @@ body{
     margin: auto;
     margin-top: 50px;
     color: $black;
+    z-index: 2;
+    @include tablet(){
+        width: 500px;
+        margin-left: 50px;
+      }
 
     h1{
       word-spacing: -1px;
       //width:88px;
       font-size: 40px;
       font-weight: $bold;  
+      @include tablet(){
+        font-size: 50px;
+        width: 450px;
+      }
     }
     p{
         margin-top: 20px;
         font-size: 16px;
+        @include tablet(){
+            width: 500px;
+          }
     }
 }
 
@@ -67,10 +85,12 @@ body{
     background-position: center;
     background-size: cover;
     margin: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     height:550px;
     margin-top: 200px;
+    @include tablet(){
+        width: 90vw;
+    }
 }
 #back-img{
     width: 400px;
@@ -79,6 +99,9 @@ body{
     margin-left: 50px;
     z-index: 1;
     position: absolute;
+    @include tablet(){
+        margin-left: 20%;
+    }
 }
 #phone-img{
     width: 300px;
@@ -87,6 +110,10 @@ body{
     margin-top: -140px;
     z-index: 100;
     position: absolute;
+    @include tablet(){
+        width: 250px;
+        margin-left: 10%;
+    }
     
 }
 
@@ -98,6 +125,13 @@ body{
     z-index: 4;
     position: absolute;
     width: 97vw;
+
+    @include tablet(){
+        width: 400px;
+        margin-left: 35%;
+        margin-top: -420px;
+        z-index: 400;
+    }
 
     h2{
       color: $white;  
@@ -112,6 +146,10 @@ body{
         font-size: 16px;
         margin-left: 15%;
         width: 350px;
+        @include tablet(){
+            width: 250px;
+            padding-top: 10px;
+        }
     }
     #money{
         color:$white;
@@ -147,15 +185,25 @@ body{
 
 footer{
     background-color: $white;
-    width: 97vw;
+    width: 90vw;
     margin-top: 440px;
     //margin-left: 20px;
     z-index: 7;
     position: absolute;
+    @include tablet(){
+        margin-top: -23px;
+        padding-top: 150px;
+        z-index: -1;
+        width: 100%;
+        margin-left: 25px;
+    }
     p{
         margin-top: 40px;
         width: 290px;
         margin-left: 20px;
+        @include tablet(){
+            width: 350px;
+        }
     }
     #mail{
         margin-top: 5px;

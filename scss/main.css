@@ -15,9 +15,19 @@ body {
   height: 100%;
   width: 100%;
 }
+@media (min-width: 900px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 1800px) {
+  body {
+    background-color: green;
+  }
+}
 
 #logo-header {
-  margin-left: 90px;
+  margin-left: 10px;
 }
 
 #first-container {
@@ -26,15 +36,33 @@ body {
   margin: auto;
   margin-top: 50px;
   color: #191826;
+  z-index: 2;
+}
+@media (min-width: 700px) {
+  #first-container {
+    width: 500px;
+    margin-left: 50px;
+  }
 }
 #first-container h1 {
   word-spacing: -1px;
   font-size: 40px;
   font-weight: 700;
 }
+@media (min-width: 700px) {
+  #first-container h1 {
+    font-size: 50px;
+    width: 450px;
+  }
+}
 #first-container p {
   margin-top: 20px;
   font-size: 16px;
+}
+@media (min-width: 700px) {
+  #first-container p {
+    width: 500px;
+  }
 }
 
 #container-images {
@@ -43,10 +71,14 @@ body {
   background-position: center;
   background-size: cover;
   margin: auto;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   height: 550px;
   margin-top: 200px;
+}
+@media (min-width: 700px) {
+  #container-images {
+    width: 90vw;
+  }
 }
 
 #back-img {
@@ -55,6 +87,11 @@ body {
   margin-left: 50px;
   z-index: 1;
   position: absolute;
+}
+@media (min-width: 700px) {
+  #back-img {
+    margin-left: 20%;
+  }
 }
 
 #phone-img {
@@ -65,6 +102,12 @@ body {
   z-index: 100;
   position: absolute;
 }
+@media (min-width: 700px) {
+  #phone-img {
+    width: 250px;
+    margin-left: 10%;
+  }
+}
 
 #second-container {
   background-color: #fa7453;
@@ -74,6 +117,14 @@ body {
   z-index: 4;
   position: absolute;
   width: 97vw;
+}
+@media (min-width: 700px) {
+  #second-container {
+    width: 400px;
+    margin-left: 35%;
+    margin-top: -420px;
+    z-index: 400;
+  }
 }
 #second-container h2 {
   color: #fcfaf9;
@@ -88,6 +139,12 @@ body {
   font-size: 16px;
   margin-left: 15%;
   width: 350px;
+}
+@media (min-width: 700px) {
+  #second-container p {
+    width: 250px;
+    padding-top: 10px;
+  }
 }
 #second-container #money {
   color: #fcfaf9;
@@ -109,7 +166,7 @@ body {
 #buttons #apple-btn {
   background-color: #191826;
   color: #fcfaf9;
-  width: 80vw;
+  width: 80%;
   padding-top: 14px;
   padding-bottom: 14px;
   border-radius: 10px;
@@ -119,7 +176,7 @@ body {
 #buttons #android-btn {
   background-color: #fcfaf9;
   color: #191826;
-  width: 80vw;
+  width: 80%;
   padding-top: 14px;
   padding-bottom: 14px;
   border-radius: 10px;
@@ -129,15 +186,29 @@ body {
 
 footer {
   background-color: #fcfaf9;
-  width: 97vw;
+  width: 90vw;
   margin-top: 440px;
   z-index: 7;
   position: absolute;
+}
+@media (min-width: 700px) {
+  footer {
+    margin-top: -23px;
+    padding-top: 150px;
+    z-index: -1;
+    width: 100%;
+    margin-left: 25px;
+  }
 }
 footer p {
   margin-top: 40px;
   width: 290px;
   margin-left: 20px;
+}
+@media (min-width: 700px) {
+  footer p {
+    width: 350px;
+  }
 }
 footer #mail {
   margin-top: 5px;
