@@ -246,11 +246,19 @@ footer {
 @media (min-width: 700px) and (min-width: 900px) {
   footer {
     margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 700px) and (min-width: 1800px) {
   footer {
     margin-left: 22vw;
+  }
+}
+@media (min-width: 900px) {
+  footer #logo-footer {
+    height: 40px;
+    margin-top: 50px;
   }
 }
 footer p {
@@ -263,6 +271,11 @@ footer p {
     width: 350px;
   }
 }
+@media (min-width: 900px) {
+  footer #text {
+    margin-left: 5vw;
+  }
+}
 footer #mail {
   margin-top: 5px;
   font-weight: 700;
@@ -271,6 +284,14 @@ footer #mail {
 footer #social-media {
   margin-top: 50px;
   padding-bottom: 30px;
+}
+footer #social-media:hover {
+  cursor: pointer;
+}
+@media (min-width: 900px) {
+  footer #social-media {
+    padding-left: 14vw;
+  }
 }
 footer img {
   padding-left: 15px;

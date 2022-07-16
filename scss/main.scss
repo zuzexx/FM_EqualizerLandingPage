@@ -231,9 +231,17 @@ footer{
         margin-left: 5vw;
         @include smol(){
             margin-left: 10vw;
+            display: flex;
+            flex-direction: row;
         }
         @include desktop(){
             margin-left: 22vw;
+        }
+    }
+    #logo-footer{
+        @include smol(){
+            height: 40px;
+            margin-top: 50px;
         }
     }
     p{
@@ -244,6 +252,11 @@ footer{
             width: 350px;
         }
     }
+    #text{
+        @include smol(){
+            margin-left: 5vw;
+        }
+    }
     #mail{
         margin-top: 5px;
         font-weight: $bold;
@@ -252,6 +265,12 @@ footer{
     #social-media{
         margin-top: 50px;
         padding-bottom: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+        @include smol(){
+            padding-left: 14vw;
+        }
     }
     img{
         padding-left: 15px;
