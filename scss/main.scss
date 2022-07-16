@@ -35,15 +35,17 @@ body{
     font-family: $font-family;
     height:100%;
     width: 100%;
-    @include smol(){
-        background-color: red;
-    }
-    @include desktop(){
-        background-color: green;
-    }
 }
 #logo-header{
     margin-left: 10px ;
+    margin-top: 10px;
+    @include tablet(){
+        margin-left: 50px;
+      }
+      @include desktop(){
+        margin-left:22%;
+    }
+
 }
 
 #first-container{
@@ -57,23 +59,39 @@ body{
         width: 500px;
         margin-left: 50px;
       }
+      @include smol(){
+        width: 600px;
+    }
+    @include desktop(){
+        margin-left:22%;
+    }
 
     h1{
       word-spacing: -1px;
       //width:88px;
       font-size: 40px;
-      font-weight: $bold;  
+      font-weight: $bold;
+      width: 70vw; 
+      max-width: 1015px; 
       @include tablet(){
         font-size: 50px;
-        width: 450px;
       }
+      @include smol(){
+        font-size: 60px;
+    }
+    @include desktop(){
+        font-size: 88px;
+    }
     }
     p{
         margin-top: 20px;
         font-size: 16px;
-        @include tablet(){
-            width: 500px;
-          }
+        width: 60vw;
+        max-width: 825px;
+        line-height: 1.5rem;
+        @include desktop(){
+            font-size: 18px;
+        }
     }
 }
 
@@ -90,6 +108,7 @@ body{
     margin-top: 200px;
     @include tablet(){
         width: 90vw;
+        max-width:1100px;
     }
 }
 #back-img{
@@ -125,12 +144,14 @@ body{
     z-index: 4;
     position: absolute;
     width: 97vw;
-
     @include tablet(){
         width: 400px;
         margin-left: 35%;
         margin-top: -420px;
         z-index: 400;
+    }
+    @include smol(){
+        margin-left: 50%;
     }
 
     h2{
@@ -175,11 +196,23 @@ body{
         background-color: $black;
         color: $white;
         @include btnStyle();
+        &:hover{
+            cursor: pointer;
+            background-color: $teal;
+            color: $black;
+            font-weight: $bold;
+        }
     }
     #android-btn{
         background-color: $white;
         color: $black;
         @include btnStyle();
+        &:hover{
+            cursor: pointer;
+            background-color: $tangerine;
+            color: $black;
+            font-weight: $bold;
+        }
     }
 }
 
@@ -195,7 +228,13 @@ footer{
         padding-top: 150px;
         z-index: -1;
         width: 100%;
-        margin-left: 25px;
+        margin-left: 5vw;
+        @include smol(){
+            margin-left: 10vw;
+        }
+        @include desktop(){
+            margin-left: 22vw;
+        }
     }
     p{
         margin-top: 40px;
