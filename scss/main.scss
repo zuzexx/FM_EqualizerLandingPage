@@ -30,10 +30,10 @@
 
 body{
     background: url("mobile.png") no-repeat center top fixed;
-    background-position: 100% 10%;
-    //background-repeat: no-repeat;
-    //background-position: center;
-    background-size: cover;
+    //background-position: 10px 0px, right 3em bottom 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: cover;
     font-family: $font-family;
     height:100%;
     width: 100%;
@@ -102,7 +102,7 @@ body{
         max-width: 825px;
         line-height: 1.5rem;
         @include smol(){
-            font-size: 16px;
+            font-size: 20px;
             line-height: 1.7rem;
             width: 100vw;
         }
@@ -154,7 +154,7 @@ body{
     @include smol(){
         margin-left: 7%;
         width: 330px;
-        margin-top: -20vh;
+        margin-top: -15vh;
     }
     
 }
@@ -267,8 +267,7 @@ footer{
             margin-left: 10vw;
             display: flex;
             flex-direction: row;
-           // padding-top: 300px;
-            margin-top: 270px;
+            margin-top: 180px;
         }
         @include desktop(){
             margin-left: 22vw;
