@@ -6,7 +6,7 @@
     padding-bottom: 14px;
     border-radius: 10px;
     border: none;
-    margin-top: 8px;
+    margin-top: 18px;
 }
 
 @mixin tablet(){
@@ -59,7 +59,7 @@ body{
     width:320px;
     height: 327px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 155px;
     color: $black;
     z-index: 2;
     @include tablet(){
@@ -87,17 +87,17 @@ body{
         font-size: 60px;
     }
     @include desktop(){
-        font-size: 90px;
+        font-size: 95px;
     }
     }
     p{
-        margin-top: 20px;
+        margin-top: 22px;
         font-size: 16px;
         width: 60vw;
         max-width: 825px;
         line-height: 1.5rem;
         @include desktop(){
-            font-size: 20px;
+            font-size: 22px;
             line-height: 1.7rem;
         }
     }
@@ -117,6 +117,7 @@ body{
     @include tablet(){
         width: 90vw;
         max-width:1100px;
+        height:700px;
     }
 }
 #back-img{
@@ -142,7 +143,7 @@ body{
         margin-left: 10%;
     }
     @include desktop(){
-        width: 300px;
+        width: 350px;
     }
     
 }
@@ -181,6 +182,7 @@ body{
         font-size: 16px;
         margin-left: 15%;
         width: 350px;
+        line-height: 1.5rem;
         @include tablet(){
             width: 250px;
             padding-top: 10px;
