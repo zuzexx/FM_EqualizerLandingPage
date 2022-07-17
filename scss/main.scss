@@ -67,7 +67,7 @@ body{
         margin-left: 50px;
       }
       @include smol(){
-        width: 600px;
+        max-width: 1100px;
     }
     @include desktop(){
         margin-left:20%;
@@ -84,7 +84,7 @@ body{
         font-size: 50px;
       }
       @include smol(){
-        font-size: 60px;
+        font-size: 75px;
     }
     @include desktop(){
         font-size: 95px;
@@ -96,8 +96,8 @@ body{
         width: 60vw;
         max-width: 825px;
         line-height: 1.5rem;
-        @include desktop(){
-            font-size: 22px;
+        @include smol(){
+            font-size: 18px;
             line-height: 1.7rem;
         }
     }
