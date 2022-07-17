@@ -313,7 +313,7 @@ footer {
 }
 @media (min-width: 700px) and (min-width: 950px) {
   footer {
-    margin-left: 10vw;
+    margin-left: 5vw;
     display: flex;
     flex-direction: row;
     padding-bottom: 150px;
