@@ -7,6 +7,7 @@
     border-radius: 10px;
     border: none;
     margin-top: 18px;
+    font-weight: $bold;
 }
 
 @mixin tablet(){
@@ -84,7 +85,7 @@ body{
         font-size: 50px;
       }
       @include smol(){
-        font-size: 75px;
+        font-size: 88px;
     }
     @include desktop(){
         font-size: 95px;
@@ -97,8 +98,9 @@ body{
         max-width: 825px;
         line-height: 1.5rem;
         @include smol(){
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.7rem;
+            width: 100vw;
         }
     }
 }
@@ -146,7 +148,9 @@ body{
         margin-left: 10%;
     }
     @include smol(){
-        width: 300px;
+        margin-left: 7%;
+        width: 330px;
+        margin-top: -20vh;
     }
     
 }
@@ -169,7 +173,7 @@ body{
         margin-left: 52%;
     }
     @include desktop(){
-        width: 420px;
+        width: 450px;
     }
 
     h2{
@@ -177,24 +181,27 @@ body{
       font-size: 40px;
       font-weight: $bold;
       margin-left: 15%;
-      padding-top: 30px;
+      padding-top: 40px;
     }
     p{
         color: $white;
         margin-top: 20px;
         font-size: 16px;
         margin-left: 15%;
-        width: 350px;
+        width: 22vw; //350px;
         line-height: 1.5rem;
+        font-weight: $regular;
         @include tablet(){
-            width: 250px;
+            //width: 250px;
             padding-top: 10px;
         }
+        
     }
     #money{
         color:$white;
         margin-left: 75px;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
         span{
             font-weight: $bold;
@@ -252,6 +259,7 @@ footer{
             margin-left: 10vw;
             display: flex;
             flex-direction: row;
+            padding-top: 300px;
         }
         @include desktop(){
             margin-left: 22vw;
@@ -273,7 +281,7 @@ footer{
     }
     #text{
         @include smol(){
-            margin-left: 5vw;
+            margin-left: 8vw;
         }
     }
     #mail{
@@ -288,7 +296,7 @@ footer{
             cursor: pointer;
         }
         @include smol(){
-            padding-left: 14vw;
+            padding-left: 18vw;
         }
     }
     img{

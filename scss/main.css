@@ -79,7 +79,7 @@ body {
 }
 @media (min-width: 900px) {
   #first-container h1 {
-    font-size: 75px;
+    font-size: 88px;
   }
 }
 @media (min-width: 1800px) {
@@ -96,8 +96,9 @@ body {
 }
 @media (min-width: 900px) {
   #first-container p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.7rem;
+    width: 100vw;
   }
 }
 
@@ -153,7 +154,9 @@ body {
 }
 @media (min-width: 900px) {
   #phone-img {
-    width: 300px;
+    margin-left: 7%;
+    width: 330px;
+    margin-top: -20vh;
   }
 }
 
@@ -181,7 +184,7 @@ body {
 }
 @media (min-width: 1800px) {
   #second-container {
-    width: 420px;
+    width: 450px;
   }
 }
 #second-container h2 {
@@ -189,26 +192,27 @@ body {
   font-size: 40px;
   font-weight: 700;
   margin-left: 15%;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 #second-container p {
   color: #fcfaf9;
   margin-top: 20px;
   font-size: 16px;
   margin-left: 15%;
-  width: 350px;
+  width: 22vw;
   line-height: 1.5rem;
+  font-weight: 400;
 }
 @media (min-width: 700px) {
   #second-container p {
-    width: 250px;
     padding-top: 10px;
   }
 }
 #second-container #money {
   color: #fcfaf9;
   margin-left: 75px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #second-container #money span {
   font-weight: 700;
@@ -231,6 +235,7 @@ body {
   border-radius: 10px;
   border: none;
   margin-top: 18px;
+  font-weight: 700;
 }
 #buttons #apple-btn:hover {
   cursor: pointer;
@@ -247,6 +252,7 @@ body {
   border-radius: 10px;
   border: none;
   margin-top: 18px;
+  font-weight: 700;
 }
 #buttons #android-btn:hover {
   cursor: pointer;
@@ -276,6 +282,7 @@ footer {
     margin-left: 10vw;
     display: flex;
     flex-direction: row;
+    padding-top: 300px;
   }
 }
 @media (min-width: 700px) and (min-width: 1800px) {
@@ -301,7 +308,7 @@ footer p {
 }
 @media (min-width: 900px) {
   footer #text {
-    margin-left: 5vw;
+    margin-left: 8vw;
   }
 }
 footer #mail {
@@ -318,7 +325,7 @@ footer #social-media:hover {
 }
 @media (min-width: 900px) {
   footer #social-media {
-    padding-left: 14vw;
+    padding-left: 18vw;
   }
 }
 footer img {
