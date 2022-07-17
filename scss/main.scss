@@ -117,7 +117,10 @@ body{
     @include tablet(){
         width: 90vw;
         max-width:1100px;
-        height:700px;
+    }
+    @include smol(){
+        height: 600px;
+        margin-top: 300px;
     }
 }
 #back-img{
@@ -142,8 +145,8 @@ body{
         width: 250px;
         margin-left: 10%;
     }
-    @include desktop(){
-        width: 350px;
+    @include smol(){
+        width: 300px;
     }
     
 }
