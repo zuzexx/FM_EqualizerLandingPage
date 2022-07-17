@@ -22,7 +22,7 @@ body {
     background-size: cover;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   body {
     background-image: url("bg-main-desktop.png");
   }
@@ -37,9 +37,27 @@ body {
     margin-left: 50px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #logo-header {
     margin-left: 22%;
+  }
+}
+
+#header-img {
+  height: 350px;
+  visibility: hidden;
+  margin-bottom: -10000px;
+}
+@media (min-width: 700px) {
+  #header-img {
+    visibility: visible;
+    margin: -80px 65vw;
+  }
+}
+@media (min-width: 950px) {
+  #header-img {
+    margin-left: 75vw;
+    height: 400px;
   }
 }
 
@@ -57,12 +75,14 @@ body {
     margin-left: 50px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #first-container {
     max-width: 1100px;
+    margin-left: 10%;
+    margin-top: 0px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #first-container {
     margin-left: 20%;
   }
@@ -79,12 +99,12 @@ body {
     font-size: 50px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #first-container h1 {
     font-size: 88px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #first-container h1 {
     font-size: 95px;
   }
@@ -96,7 +116,7 @@ body {
   max-width: 825px;
   line-height: 1.5rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #first-container p {
     font-size: 20px;
     line-height: 1.7rem;
@@ -112,7 +132,7 @@ body {
   margin: auto;
   border-radius: 20px;
   height: 550px;
-  margin-top: 250px;
+  margin-top: 270px;
 }
 @media (min-width: 700px) {
   #container-images {
@@ -120,10 +140,10 @@ body {
     max-width: 1100px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #container-images {
     height: 600px;
-    margin-top: 300px;
+    margin-top: 310px;
   }
 }
 
@@ -154,7 +174,7 @@ body {
     margin-left: 10%;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #phone-img {
     margin-left: 7%;
     width: 330px;
@@ -179,12 +199,13 @@ body {
     z-index: 400;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   #second-container {
     margin-left: 52%;
+    margin-top: -470px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #second-container {
     width: 450px;
   }
@@ -211,7 +232,7 @@ body {
     padding-top: 10px;
   }
 }
-@media (min-width: 700px) and (min-width: 1800px) {
+@media (min-width: 700px) and (min-width: 1600px) {
   #second-container p {
     width: 18vw;
   }
@@ -268,6 +289,11 @@ body {
   color: #191826;
   font-weight: 700;
 }
+@media (min-width: 950px) {
+  #buttons #android-btn {
+    margin-bottom: 30px;
+  }
+}
 
 footer {
   background-color: #fcfaf9;
@@ -285,20 +311,23 @@ footer {
     margin-left: 5vw;
   }
 }
-@media (min-width: 700px) and (min-width: 900px) {
+@media (min-width: 700px) and (min-width: 950px) {
   footer {
     margin-left: 10vw;
     display: flex;
     flex-direction: row;
-    margin-top: 180px;
+    padding-bottom: 150px;
   }
 }
-@media (min-width: 700px) and (min-width: 1800px) {
+@media (min-width: 700px) and (min-width: 1600px) {
   footer {
     margin-left: 22vw;
   }
 }
-@media (min-width: 900px) {
+footer #logo-footer {
+  margin-left: 30px;
+}
+@media (min-width: 950px) {
   footer #logo-footer {
     height: 40px;
     margin-top: 50px;
@@ -314,9 +343,9 @@ footer p {
     width: 350px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   footer #text {
-    margin-left: 8vw;
+    margin-left: 4vw;
   }
 }
 footer #mail {
@@ -331,11 +360,12 @@ footer #social-media {
 footer #social-media:hover {
   cursor: pointer;
 }
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   footer #social-media {
-    padding-left: 18vw;
+    padding-left: 10vw;
   }
 }
-footer img {
-  padding-left: 15px;
+footer #social-media img {
+  margin-left: 28px;
+  width: 30px;
 }/*# sourceMappingURL=main.css.map */

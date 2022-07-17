@@ -59,6 +59,22 @@ body{
     }
 
 }
+#header-img{
+    height: 350px;
+    visibility: hidden;
+    margin-bottom: -10000px;
+    @include tablet(){
+        visibility: visible;
+        //margin-left: 75vw;
+        //margin-bottom: 1px;
+        margin: -80px 65vw; 
+        //padding-bottom: -50px;
+    }
+    @include smol(){
+        margin-left: 75vw;
+        height: 400px;
+    }
+}
 
 #first-container{
     width:320px;
@@ -70,12 +86,16 @@ body{
     @include tablet(){
         width: 500px;
         margin-left: 50px;
+        
+
       }
       @include smol(){
         max-width: 1100px;
+        margin-left:10%;
+        margin-top: 0px;
     }
     @include desktop(){
-        margin-left:20%;
+       margin-left:20%;
     }
 
     h1{
@@ -119,14 +139,14 @@ body{
     margin: auto;
     border-radius: 20px;
     height:550px;
-    margin-top: 250px;
+    margin-top: 270px;
     @include tablet(){
         width: 90vw;
         max-width:1100px;
     }
     @include smol(){
         height: 600px;
-        margin-top: 300px;
+        margin-top: 310px;
     }
 }
 #back-img{
@@ -175,6 +195,7 @@ body{
     }
     @include smol(){
         margin-left: 52%;
+        margin-top: -470px
     }
     @include desktop(){
         width: 450px;
@@ -247,6 +268,9 @@ body{
             color: $black;
             font-weight: $bold;
         }
+        @include smol(){
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -267,13 +291,15 @@ footer{
             margin-left: 10vw;
             display: flex;
             flex-direction: row;
-            margin-top: 180px;
+            //margin-top: -110px;
+            padding-bottom: 150px;
         }
         @include desktop(){
             margin-left: 22vw;
         }
     }
     #logo-footer{
+        margin-left: 30px;
         @include smol(){
             height: 40px;
             margin-top: 50px;
@@ -289,7 +315,7 @@ footer{
     }
     #text{
         @include smol(){
-            margin-left: 8vw;
+            margin-left: 4vw;
         }
     }
     #mail{
@@ -304,10 +330,12 @@ footer{
             cursor: pointer;
         }
         @include smol(){
-            padding-left: 18vw;
+            padding-left: 10vw;
+            
         }
-    }
-    img{
-        padding-left: 15px;
+        img{
+            margin-left: 28px;
+            width: 30px;
+        }
     }
 }
