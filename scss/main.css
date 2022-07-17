@@ -15,6 +15,16 @@ body {
   height: 100%;
   width: 100%;
 }
+@media (min-width: 700px) {
+  body {
+    background-image: url(".assets/bg-main-tablet.png");
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-image: url(".assets/bg-main-desktop.png");
+  }
+}
 
 #logo-header {
   margin-left: 10px;
@@ -35,7 +45,7 @@ body {
   width: 320px;
   height: 327px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 150px;
   color: #191826;
   z-index: 2;
 }
@@ -52,7 +62,7 @@ body {
 }
 @media (min-width: 1800px) {
   #first-container {
-    margin-left: 22%;
+    margin-left: 20%;
   }
 }
 #first-container h1 {
@@ -74,7 +84,7 @@ body {
 }
 @media (min-width: 1800px) {
   #first-container h1 {
-    font-size: 88px;
+    font-size: 90px;
   }
 }
 #first-container p {
@@ -86,7 +96,8 @@ body {
 }
 @media (min-width: 1800px) {
   #first-container p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.7rem;
   }
 }
 
@@ -98,7 +109,7 @@ body {
   margin: auto;
   border-radius: 20px;
   height: 550px;
-  margin-top: 200px;
+  margin-top: 250px;
 }
 @media (min-width: 700px) {
   #container-images {
@@ -134,6 +145,11 @@ body {
     margin-left: 10%;
   }
 }
+@media (min-width: 1800px) {
+  #phone-img {
+    width: 300px;
+  }
+}
 
 #second-container {
   background-color: #fa7453;
@@ -154,14 +170,19 @@ body {
 }
 @media (min-width: 900px) {
   #second-container {
-    margin-left: 50%;
+    margin-left: 52%;
+  }
+}
+@media (min-width: 1800px) {
+  #second-container {
+    width: 420px;
   }
 }
 #second-container h2 {
   color: #fcfaf9;
   font-size: 40px;
   font-weight: 700;
-  margin-left: 30px;
+  margin-left: 15%;
   padding-top: 30px;
 }
 #second-container p {
