@@ -2,8 +2,8 @@
 
 @mixin btnStyle(){
     width: 80%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 10px;
     border: none;
     margin-top: 18px;
@@ -29,19 +29,23 @@
 }
 
 body{
-    background-image: url(".assets/mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("mobile.png") no-repeat center top fixed;
+    background-position: 100% 10%;
+    //background-repeat: no-repeat;
+    //background-position: center;
     background-size: cover;
     font-family: $font-family;
     height:100%;
     width: 100%;
     @include tablet(){
-        background-image: url(".assets/bg-main-tablet.png");
+        background-image: url("bg-main-tablet.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
     }
     @include smol(){
-        background-image: url(".assets/bg-main-desktop.png");
+        background-image: url("bg-main-desktop.png");
     }
 }
 #logo-header{
@@ -188,12 +192,16 @@ body{
         margin-top: 20px;
         font-size: 16px;
         margin-left: 15%;
-        width: 22vw; //350px;
+        width: 350px;
         line-height: 1.5rem;
         font-weight: $regular;
         @include tablet(){
             //width: 250px;
+            width: 22vw;
             padding-top: 10px;
+            @include desktop(){
+                width: 18vw;
+            }
         }
         
     }
@@ -245,13 +253,13 @@ body{
 footer{
     background-color: $white;
     width: 90vw;
-    margin-top: 440px;
+    margin-top: 540px;
     //margin-left: 20px;
     z-index: 7;
     position: absolute;
     @include tablet(){
-        margin-top: -23px;
-        padding-top: 150px;
+        margin-top: 200px;
+        padding-top: 100px;
         z-index: -1;
         width: 100%;
         margin-left: 5vw;
@@ -259,7 +267,8 @@ footer{
             margin-left: 10vw;
             display: flex;
             flex-direction: row;
-            padding-top: 300px;
+           // padding-top: 300px;
+            margin-top: 270px;
         }
         @include desktop(){
             margin-left: 22vw;

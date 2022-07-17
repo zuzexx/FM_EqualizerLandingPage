@@ -7,9 +7,8 @@
 }
 
 body {
-  background-image: url(".assets/mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("mobile.png") no-repeat center top fixed;
+  background-position: 100% 10%;
   background-size: cover;
   font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
@@ -17,12 +16,15 @@ body {
 }
 @media (min-width: 700px) {
   body {
-    background-image: url(".assets/bg-main-tablet.png");
+    background-image: url("bg-main-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media (min-width: 900px) {
   body {
-    background-image: url(".assets/bg-main-desktop.png");
+    background-image: url("bg-main-desktop.png");
   }
 }
 
@@ -199,13 +201,19 @@ body {
   margin-top: 20px;
   font-size: 16px;
   margin-left: 15%;
-  width: 22vw;
+  width: 350px;
   line-height: 1.5rem;
   font-weight: 400;
 }
 @media (min-width: 700px) {
   #second-container p {
+    width: 22vw;
     padding-top: 10px;
+  }
+}
+@media (min-width: 700px) and (min-width: 1800px) {
+  #second-container p {
+    width: 18vw;
   }
 }
 #second-container #money {
@@ -230,8 +238,8 @@ body {
   background-color: #191826;
   color: #fcfaf9;
   width: 80%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 10px;
   border: none;
   margin-top: 18px;
@@ -247,8 +255,8 @@ body {
   background-color: #fcfaf9;
   color: #191826;
   width: 80%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 10px;
   border: none;
   margin-top: 18px;
@@ -264,14 +272,14 @@ body {
 footer {
   background-color: #fcfaf9;
   width: 90vw;
-  margin-top: 440px;
+  margin-top: 540px;
   z-index: 7;
   position: absolute;
 }
 @media (min-width: 700px) {
   footer {
-    margin-top: -23px;
-    padding-top: 150px;
+    margin-top: 200px;
+    padding-top: 100px;
     z-index: -1;
     width: 100%;
     margin-left: 5vw;
@@ -282,7 +290,7 @@ footer {
     margin-left: 10vw;
     display: flex;
     flex-direction: row;
-    padding-top: 300px;
+    margin-top: 270px;
   }
 }
 @media (min-width: 700px) and (min-width: 1800px) {
